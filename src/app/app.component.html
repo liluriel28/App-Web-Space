@@ -1,0 +1,42 @@
+
+<div class="name">
+  <h1>Uriel Marquez Cruz</h1>
+  <h1>Citlally Itzel Carrera Sanchez</h1>
+</div>
+
+<hr>
+
+
+
+<div class="wrapper">
+  <div class="gallery">
+    <div class="card" style="width: 18rem;" *ngFor="let item of ships">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <div class="card__content">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Tipo: {{item.type}}</h5>
+        <h6 class="card-text">Roles:{{ item.roles}}.</h6>
+        <p class="card-text">Nombre: {{item.name}}.</p>
+        <p href="#" class="card-link">Link: {{ item.link}}</p>
+        <p href="#" class="card-link">Imagen: {{item.image}}</p>
+        <p href="#" class="card-link">Launches: {{item.launches}}</p>
+        <p href="#" class="card-link">Home port: {{item.home_port}}</p>
+        <p href="#" class="card-link">Year built: {{item.year_built}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
